@@ -1,0 +1,13 @@
+{
+  "name": "realtime-chat-video-call-platform",
+  "private": true,
+  "scripts": {
+    "docker:up": "node scripts/start-demo.js",
+    "docker:down": "docker compose down",
+    "test:smoke": "node scripts/smoke-test.js",
+    "test": "npm --prefix server test && npm --prefix client test",
+    "check:server": "npm --prefix server run check",
+    "build:client": "npm --prefix client run build"
+  },
+  "type": "module"
+}
